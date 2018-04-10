@@ -128,17 +128,22 @@ while True:
         score = score
     print("Current Score:", score, "out of 5.")
     print("")
-
+    
+    if score <2:
+        print("Sorry,{}.".format(name), "You have failed the quiz with a score of", score,"out of 5")
+        print("Now you will move on to Round 2 of the quiz.")
     if score >= 3 and  score < 5:
-          print("Great Job, {}!".format(name),"You passed this round with a score of {}!".format(score))
-          print("Now you will move on to Round 2 of the quiz.")
+        print("Great Job, {}!".format(name),"You passed this round with a score of {}!".format(score))
+    if score = 5:
+        print("Amazing, {}!".format(name), "You're a regular football fiend! You passed this round with a score of", score, "out of 5!")
+  
     
     retake = input("Would you like to take the quiz again? Y/N?:")
     if retake == "Y" or retake == 'y':
         continue
     elif retake != "Y" or retake != 'y':
         break
-
+'''
 
 
     # Round 2:
@@ -178,6 +183,8 @@ while True:
     print("C. Tom Brady")
     print("")
 
+    # Round 3:
+    
     # Question 1
     print("Question 1: What is the maximum amount of players allowed on the field at a time for both offense and defense? \n")
     print("A. 5")
@@ -212,3 +219,4 @@ while True:
     print("Week 16: 2016")
     print("3 whole football seasons ago")
     print("")
+'''
